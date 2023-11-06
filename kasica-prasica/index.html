@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/20ebe1846a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasica Prasica</title>
+</head>
+<body>
+    <main>
+        <div id="add-section-form">
+            <div class="fa-ikonice">
+                <p>fa-solid fa-house</p>
+                <p>fa-solid fa-star</p>
+                <p>fa-solid fa-cloud</p>
+                <p>fa-solid fa-user</p>
+                <p>fa-solid fa-hippo</p>
+                <p>fa-solid fa-ghost</p>
+                <p>fa-solid fa-tag</p>
+                <p>fa-solid fa-hand</p>
+            </div>
+            <form>
+                <input type="text" placeholder="FontAwesome Icon" id="section-icon">
+                <input type="text" placeholder="Name" id="section-name" required>
+                <label for="section-color">Odaberi boju</label>
+                <input type="color" placeholder="Boja" id="section-color" required>
+                <button type="submit">Submit</button>
+                <button id="close-section">Close</button>
+            </form>
+        </div>
+
+        <div id="add-article-form">
+            <form>
+                <input type="text" placeholder="Ime" id="artikl-ime" required>
+                <input type="number" placeholder="Cena" id="artikl-cena" required>
+                <button type="submit">Submit</button>
+                <button id="close-article">Close</button>
+            </form>
+        </div>
+        <div id="add-section">Dodaj Sekciju</div>
+        <div id="add-article">Dodaj Artikl</div>
+        <div id="remove-items"><i class="fa-solid fa-trash"></i></div>
+        <aside class="">
+            <i class="fa-solid fa-chevron-up"></i>
+            <div class="racun-sto">
+                <div id="naziv-stola">
+                    Ime Stola
+                </div>
+                <div id="racun-cene">
+                </div>
+                <div class="ukupna-cena">
+                    <div>Ukupno</div>
+                    <div id="zbir">0</div>
+                </div>
+            </div>
+            <div>
+                <div id="stampaj-racun">Naplati</div>
+                <div id="delete-table">Obrisi</div>
+            </div>
+        </aside>
+        <div class="glavni-deo" id="glavni">
+            <div class="artikli">
+                <!-- <div class="caj selected"><i class="fa-solid fa-mug-saucer"></i><span>Caj</span></div>
+                <div class="kafe"><i class="fa-solid fa-mug-hot"></i><span>Kafe</span></div>
+                <div class="piva"><i class="fa-solid fa-beer-mug-empty"></i><span>Piva</span></div>
+                <div class="neg-sokovi"><i class="fa-solid fa-glass-water"></i><span>Neg. Sokovi</span></div>
+                <div class="zestina"><i class="fa-solid fa-whiskey-glass"></i><span>Zestina</span></div> -->
+            </div>
+            <div id="artikli-specificno">
+                <!-- <div id="caj" class="visible">
+                    <div>
+                        <div class="specificno-ime">Kamilica</div>
+                        <div class="specificno-cena">120</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Nana</div>
+                        <div class="specificno-cena">130</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Hibiskus</div>
+                        <div class="specificno-cena">140</div>
+                    </div>
+                </div>
+                <div id="kafe">
+                    <div>
+                        <div class="specificno-ime">Espresso</div>
+                        <div class="specificno-cena">130</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Cappuccino</div>
+                        <div class="specificno-cena">150</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Machiato</div>
+                        <div class="specificno-cena">120</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Latte</div>
+                        <div class="specificno-cena">150</div>
+                    </div>
+                </div>
+                <div id="piva">
+                    <div>
+                        <div class="specificno-ime">Tuborg</div>
+                        <div class="specificno-cena">160</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Heiniken</div>
+                        <div class="specificno-cena">190</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Carlsberg</div>
+                        <div class="specificno-cena">200</div>
+                    </div>
+                </div>
+                <div id="zestina">
+                    <div>
+                        <div class="specificno-ime">Black Label</div>
+                        <div class="specificno-cena">190</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Red Label</div>
+                        <div class="specificno-cena">170</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Jack Daniels</div>
+                        <div class="specificno-cena">190</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">Chivas</div>
+                        <div class="specificno-cena">190</div>
+                    </div>
+                    <div>
+                        <div class="specificno-ime">4 Roses</div>
+                        <div class="specificno-cena">190</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="donji-deo">
+                <div id="nova-porudzbina">Nova Porudzbina</div>
+                <div id="stolovi">
+                </div>
+            </div>
+        </div>
+        <div id="pregled-stolovi" hidden>
+            <div class="astali">
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">lalal</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">stocic</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">3</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">4</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">5</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">6</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">7</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">8</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+                <div class="sto-posebno">
+                    <i class="fa-solid fa-square"></i>
+                    <div class="ime-stola">9</div>
+                    <div class="artikli-u-stolu" hidden></div>
+                </div>
+            </div>
+            <div id="izlaz-stolovi">Izadji</div>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="table.js"></script>
+    <!-- <script src="data.js" module defer></script> -->
+</body>
+</html>

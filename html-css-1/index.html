@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="slike/page-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/20ebe1846a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekat 1</title>
+</head>
+<body>
+
+    <div id="toTop" hidden><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+
+    <div id="mala-navigacija" hidden>
+        <div class="black" onclick="closeNav()"></div>
+        <div class="slider">
+        <div>
+            <a href="#"><img src="slike/logo-all-dark.png" alt="logo" onclick="closeNav()"></a>
+            <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+        </div>
+        <ul>
+            <li><a href="#" onclick="closeNav()">Home</a></li>
+            <li><a href="#About" onclick="closeNav()">About</a></li>
+            <li><a href="#Services" onclick="closeNav()">Services</a></li>
+            <li><a href="#Portfolio" onclick="closeNav()">Portfolio</a></li>
+            <li><a href="#Pricing" onclick="closeNav()">Pricing</a></li>
+            <li><a href="#Blog" onclick="closeNav()">Blog</a></li>
+            <li><a href="#Contact" onclick="closeNav()">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <nav id="navigation">
+        <a href="#"><img src="slike/logo.png" alt="logo" id="nav-logo"></a>
+        <ul>
+            <li><a href="#" id="homeNav">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="button">buy now</div>
+        <i class="fa-solid fa-bars" style="cursor: pointer;" onclick="malaNavigacija()">
+        </i>
+    </nav>
+    <header style="background-image: url(slike/background-image.jpg);">
+        <div class="header-container">
+            <p>freelance digital designer</p>
+            <p>I'm Joe Biden<br><span>JS Developer.</span></p>
+            <p>based in USA.</p>
+            <div class="button">download cv</div>
+        </div>
+        
+    </header>
+    <main id="main">
+        <div class="about-me" id="About">
+            <div><img src="slike/about.jpg" alt=""></div>
+            <div>
+                <p class="text-gradient">My About Details</p>
+                <h2>About me</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered in some form, by injected humour.</p>
+                <div class="about-nav" id="about-nav">
+                    <ul>
+                        <li id="tab-1"><a href="#opis1">Main Skills</a></li>
+                        <li id="tab-2"><a href="#opis2">Awards</a></li>
+                        <li id="tab-3"><a href="#opis3">Experience</a></li>
+                        <li id="tab-4"><a href="#opis4">Education & Certification</a></li>
+                    </ul>
+                    <div class="opis-container">
+                        <div class="opis" id="opis1">
+                            <div>
+                                <p>User experience design - <span>UI/UX</span></p>
+                                <p>Delight the user and make it work.</p>
+                            </div>
+                            <div>
+                                <p>Web and user interface design - <span>Development</span></p>
+                                <p>Websites, web experiences, ...</p>
+                            </div>
+                            <div>
+                                <p>Interaction design - <span>Animation</span></p>
+                                <p>I like to move it move it.</p>
+                            </div>
+                        </div>
+                        <div class="opis" id="opis2">
+                            <div>
+                                <p>Awwwards.com - <span>Winner</span></p>
+                                <p>2019 - 2020</p>
+                            </div>
+                            <div>
+                                <p>CSS Design Awards - <span>Winner</span></p>
+                                <p>2017 - 2018</p>
+                            </div>
+                            <div>
+                                <p>Design nominees - <span>site of the day</span></p>
+                                <p>2013 - 2014</p>
+                            </div>
+                        </div>
+                        <div class="opis" id="opis3">
+                            <div>
+                                <p>Sr. Front-end Engineer - <span>Google</span></p>
+                                <p>2018 - Current</p>
+                            </div>
+                            <div>
+                                <p>Front-end Engineer - <span>Microsoft</span></p>
+                                <p>2017 - 2018</p>
+                            </div>
+                            <div>
+                                <p>Software Engineer - <span>Alibaba</span></p>
+                                <p>2013 - 2014</p>
+                            </div>
+                        </div>
+                        <div class="opis" id="opis4">
+                            <div>
+                                <p>BSc In CSE - <span>ABC University, Los Angeles, CA</span></p>
+                                <p>2010</p>
+                            </div>
+                            <div>
+                                <p>Diploma in Computer Science - <span>Gamma Technical Institute</span></p>
+                                <p>2009</p>
+                            </div>
+                            <div>
+                                <p>Graphic Designer - <span>ABC Institute, Los Angeles, CA</span></p>
+                                <p>2007</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="service" id="Services">
+            <p class="text-gradient">What we can do for you</p>
+            <h2>My Awesome service</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but majority have suffered alternation.</p>
+            <div class="service-cards">
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>Business Stratagy</p>
+                    <p>There are many variations of passages of Lorem Ipsum available, but majority have.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tv"></i></i>
+                    <p>Website Development</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <p>Marketing & Reporting</p>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in all.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>Mobile Development</p>
+                    <p>There are many variations of passages of Lorem Ipsum available, but majority.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-gantt"></i>
+                    <p>Marketing & Reporting</p>
+                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet...", comes from a line in section.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cube"></i>
+                    <p>App Development</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                </div>
+            </div>
+        </div>
+        <div class="latest-project" id="Portfolio">
+            <p class="text-gradient">My complete project</p>
+            <h2>My Latest project</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <div class="project-cards">
+                <div>
+                    <a href="stranica/stranica.html">
+                        <div>
+                            <img src="slike/latest1.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Development</p>
+                            <p>Game Development</p>
+                            <div class="button">Case Study</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stranica/stranica.html">
+                        <div>
+                            <img src="slike/latest2.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Development</p>
+                            <p>Reporting Development</p>
+                            <div class="button">Case Study</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stranica/stranica.html">
+                        <div>
+                            <img src="slike/latest3.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Application Development</p>
+                            <p>SEO Marketing</p>
+                            <div class="button">Case Study</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stranica/stranica.html">
+                        <div>
+                            <img src="slike/latest4.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Development</p>
+                            <p>Web Design</p>
+                            <div class="button">Case Study</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stranica/stranica.html">
+                        <div>
+                            <img src="slike/latest5.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Development</p>
+                            <p>App Development</p>
+                            <div class="button">Case Study</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="stranica/stranica.html">
+                        <div>
+                            <img src="slike/latest6.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Photoshop</p>
+                            <p>Photoshop Design</p>
+                            <div class="button">Case Study</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="button">view more products</div>
+        </div>
+        <div class="pricing" id="Pricing">
+            <p class="text-gradient">My budget Plan</p>
+            <h2>Pricing Plan</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <div>
+                <div class="pricing-card">
+                    <p>Basic</p>
+                    <p>$45</p>
+                    <p>USD Per Month</p>
+                    <div class="spacer"></div>
+                    <div>
+                        <i class="fa-solid fa-check"></i><span>5 PPC Campaigns Per Day</span><br>
+                        <i class="fa-solid fa-check"></i><span>10 Digital Marketing</span><br>
+                        <i class="fa-solid fa-check"></i><span>10 Marketing Agency</span><br>
+                        <i class="fa-solid fa-check"></i><span>10 Facebook Marketing</span><br>
+                        <i class="fa-solid fa-check"></i><span>10 Video Camplaigns</span>
+                    </div>
+                    <div class="button">Purchase now</div>
+                </div>
+                <div class="pricing-card medium">
+                    <p>Medium</p>
+                    <p>$99</p>
+                    <p>USD Per Month</p>
+                    <div class="spacer"></div>
+                    <div>
+                        <i class="fa-solid fa-check"></i><span>50 PPC Campaigns Per Day</span><br>
+                        <i class="fa-solid fa-check"></i><span>100 Digital Marketing</span><br>
+                        <i class="fa-solid fa-check"></i><span>100 Marketing Agency</span><br>
+                        <i class="fa-solid fa-check"></i><span>100 Facebook Marketing</span><br>
+                        <i class="fa-solid fa-check"></i><span>100 Video Camplaigns</span>
+                    </div>
+                    <div class="button">Purchase now</div>
+                </div>
+                <div class="pricing-card">
+                    <p>Medium</p>
+                    <p>$199</p>
+                    <p>USD Per Month</p>
+                    <div class="spacer"></div>
+                    <div>
+                        <i class="fa-solid fa-check"></i><span>5 PPC Campaigns Per Day</span><br>
+                        <i class="fa-solid fa-check"></i><span>Unlimited Digital Marketing</span><br>
+                        <i class="fa-solid fa-check"></i><span>Unlimited Marketing Agency</span><br>
+                        <i class="fa-solid fa-check"></i><span>Unlimited Facebook Marketing</span><br>
+                        <i class="fa-solid fa-check"></i><span>Unlimited Video Camplaigns</span>
+                    </div>
+                    <div class="button">Purchase now</div>
+                </div>
+            </div>
+        </div>
+        <div class="latest-news" id="Blog">
+            <p class="text-gradient">what's stories on</p>
+            <h2>Latest News</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <div class="news-cards">
+                <div>
+                    <div>
+                        <img src="slike/news1.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>Development</p>
+                        <p>Have You Heard? Agency Is Your Best Bet To Grow</p>
+                        <div class="button">Read More</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="slike/news2.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>Gallery</p>
+                        <p>Agency Works Only Under These Conditions</p>
+                        <div class="button">Read More</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="slike/news3.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>Development</p>
+                        <p>Top 10 Tips To Grow Your Agency</p>
+                        <div class="button">Read More</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hire-me" id="Contact">
+            <div class="right">
+                <img src="slike/hire-me.jpg" alt="">
+            </div>
+            <div class="left">
+                <p class="text-gradient">Let's Say Hi</p>
+                <h2>Hire Me.</h2>
+                <p>Call us directly: <a href="#">+ 111 (0)55 5869 8976</a></p>
+                <p>Contact Email: <a href="#">example@gmail.com</a></p>
+                <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Your Name *">
+                        <input type="email" placeholder="Your Email *">
+                        <input type="text" placeholder="Your Subject">
+                        <textarea placeholder="Your Message *"></textarea>
+                        <div class="button">Submit Now</div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+
+        <div>
+            <a href="#"><img src="slike/logo-light.png" alt=""></a>
+            <div class="social-media">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-dribbble"></i>
+            </div>
+            <div>
+                Copyright © 2022 All rights reserved by Rainbow-Themes. Built with love in Bangladesh All rights reserved.
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

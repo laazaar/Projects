@@ -1,0 +1,60 @@
+:root {
+    --primary: #f9b530;
+    --primary-dark: #1e1e1e;
+    --primary-light: #ffffff;
+}
+
+@font-face {
+    font-family: 'Gilroy-bold';
+    src: url(Fonts/Gilroy-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-dark);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-image: url(Slike/Header-svgs.png);
+    background-size: 70%;
+    font-family: Gilroy-bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+p {
+    color: var(--primary-light);
+    font-size: 2rem;
+    margin-block: 5rem;
+}
+
+#go-back {
+    background-color: var(--primary);
+    padding: 1.5rem 3.2rem;
+    width: max-content;
+    position: relative;
+    margin-inline: auto;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    #go-back {
+        font-size: 1.2rem;
+        padding: 1rem 2.3rem;
+    }
+}

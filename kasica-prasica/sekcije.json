@@ -1,0 +1,18 @@
+[
+    {
+        "ikonica": "fa-solid fa-mug-saucer",
+        "ime": "Caj"
+    },
+    {
+        "ikonica": "fa-solid fa-mug-hot",
+        "ime": "Kafe"
+    },
+    {
+        "ikonica": "fa-solid fa-beer-mug-empty",
+        "ime": "Piva"
+    },
+    {
+        "ikonica": "fa-solid fa-whiskey-glass",
+        "ime": "Zestina"
+    }
+]

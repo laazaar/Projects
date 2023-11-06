@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20ebe1846a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekat 2</title>
+</head>
+<body>
+    <div id="toTop" hidden>
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+    <header>
+        <nav>
+            <img src="slike/logo.jpg" alt="logo">
+            <div>
+                <div>
+                    <div>800 123 4567</div>
+                    <div class="kasnije">porto@domain.com</div>
+                    <div class="kasnije">Mon - Sat: 9AM - 6PM</div>
+                    <div class="social-media">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <div class="nav-donji-deo">
+                    <div class="navigacija">
+                        <ul>
+                            <a href="#" class="active">
+                                <li>Home</li>
+                            </a>
+                            <a href="about/about.html">
+                                <li>About Us</li>
+                            </a>
+                            <a href="services/services.html">
+                                <li>Services</li>
+                            </a>
+                            <a href="news/news.html">
+                                <li>News</li>
+                            </a>
+                            <a href="contact/contact.html">
+                                <li>Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="nav-buttons">
+                        <div class="button">Request Rate</div>
+                        <div class="button blue-btn">Track Order</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-menu" onclick="navigacija()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div id="mala-navigacija">
+            <ul>
+                <a href="#">
+                    <li class="active">Home</li>
+                </a>
+                <a href="about/about.html">
+                    <li>About Us</li>
+                </a>
+                <a href="services/services.html">
+                    <li>Services</li>
+                </a>
+                <a href="news/news.html">
+                    <li>News</li>
+                </a>
+                <a href="contact/contact.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+        <div class="header-content" style="background-image: url(slike/header-bg.jpg);">
+            <h1>we delivery<br><span>we delivery</span></h1>
+        </div>
+        <div class="services-cards">
+            <div class="service-navigator">
+                <p>Our Services</p>
+                <div>
+                    <i class="fa-solid fa-chevron-left service-back"></i>
+                    <i class="fa-solid fa-chevron-right service-forward"></i>
+                </div>
+            </div>
+            <div class="services-container">
+                <div class="service">
+                    <img src="slike/srvcs-ground.png" alt="">
+                    <div>
+                        <p>Ground Shipping</p>
+                        <p>Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="slike/srvcs-air.png" alt="">
+                    <div>
+                        <p>Air Freight</p>
+                        <p>Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="slike/srvcs-package.png" alt="">
+                    <div>
+                        <p>Warehousing</p>
+                        <p>Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="slike/srvcs-ground.png" alt="">
+                    <div>
+                        <p>Ground Shipping</p>
+                        <p>Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="slike/srvcs-air.png" alt="">
+                    <div>
+                        <p>Air Freight</p>
+                        <p>Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="slike/srvcs-package.png" alt="">
+                    <div>
+                        <p>Warehousing</p>
+                        <p>Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="about-us">
+            <div class="left">
+                <div class="text">
+                    <div>35</div>
+                    <div>years in business and cras a elit sit amet leo accumsan vo lutpat su spendisse hendrerit amet leo.</div>
+                </div>
+                <a href="#">view more about us</a>
+            </div>
+            <div class="about-us-spacer"></div>
+            <div class="right">We are <span>committed</span> to providing our clients the best logistic and transportation services.</div>
+        </div>
+        <div class="picture-crsl">
+            <div class="carousel">
+                <div style="background-image: url(slike/service-1.jpg);">
+                    <p>Registered Shippers</p>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="button">View Details</div>
+                    </div>
+                </div>
+                <div style="background-image: url(slike/service-2.jpg);">
+                    <p>Local Pickup and Delivery</p>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="button">View Details</div>
+                    </div>
+                </div>
+                <div style="background-image: url(slike/service-3.jpg);">
+                    <p>Freight Consolidation</p>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="button">View Details</div>
+                    </div>
+                </div>
+                <div style="background-image: url(slike/service-1.jpg);">
+                    <p>Registered Shippers</p>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="button">View Details</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div>testimonials</div>
+            <svg height="68" viewBox="0 0 24 24" width="68" xmlns="http://www.w3.org/2000/svg" id="icon_41655252074617" data-filename="quote.svg"><path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.318.142-.686.238-1.028.466-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.945-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 17.5 10z"></path></svg>
+            <div class="testimonials-crsl">
+                <div>
+                    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam libero, impedit tempore recusandae placeat voluptatibus consequatur iste odio quo, voluptas doloribus nesciunt consectetur iusto. Quibusdam tempora sapiente architecto ipsam voluptates.</div>
+                    <p>
+                        John Smith<br>
+                        <span>CEO & Founder - Okler</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="blue">
+            <div>
+                <p><span>Request Rate Online</span> - Need Immediate Confirmation? Call Us at 888-123-4567</p>
+                <div class="button">Request Rate</div>
+            </div>
+        </div>
+        <div class="process">
+            <div class="process-left">
+                <div>Our <span>process</span> is one of the things that makes us very competitive in the logistic market.</div>
+                <div class="list">
+                    <div>
+                        <div class="number">1</div>
+                        <div>
+                            <div>Receiving</div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="number">2</div>
+                        <div>
+                            <div>Shipping</div>
+                            <div>Ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="number">3</div>
+                        <div>
+                            <div>Delivery</div>
+                            <div>Dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="process-right" style="background-image: url(slike/shipping.jpg);">
+                <!-- <img src="slike/shipping.jpg" alt=""> -->
+            </div>
+        </div>
+        <div class="latest">
+            <div class="latest-left">
+                <div class="latest-heading">Latest News</div>
+                <div class="calender">
+                    <img src="slike/post-thumb-1.jpg" alt="">
+                    <div>16<br>
+                    <span>JUN</span></div>
+                </div>
+                <div class="latest-left-text">
+                    <div>BY JOE DOE</div>
+                    <div>Lorem ipsum dolor sit a met, consectetur</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque rutrum pellentesqu...</div>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+            <div class="latest-right">
+                <div class="latest-heading">FAQ's</div>
+                <div class="accordions">
+                    <div>
+                        <div class="accordion-header">
+                            <div>1-Tristique sit amet condim vel?</div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="accordion-body">
+                            Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="accordion-header">
+                            <div>2-Cras a elit sit amet leo accumsan?</div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="accordion-body">Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien.</div>
+                    </div>
+                    <div>
+                        <div class="accordion-header">
+                            <div>3-Hel officitur felis ultricis nan?</div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="accordion-body">Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien.</div>
+                    </div>
+                    <div>
+                        <div class="accordion-header">
+                            <div>4-Wasupaisse hendreirit vehicula leo?</div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="accordion-body">Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien.</div>
+                    </div>
+                </div>
+                <a href="#">READ MORE</a>
+            </div>
+        </div>
+        <div class="companies">
+            <div style="background-image: url(slike/cmpny-1.jpg);"></div>
+            <div style="background-image: url(slike/cmpny-2.jpg);"></div>
+            <div style="background-image: url(slike/cmpny-3.jpg);"></div>
+            <div style="background-image: url(slike/cmpny-4.jpg);"></div>
+            <div style="background-image: url(slike/cmpny-5.jpg);"></div>
+            <div style="background-image: url(slike/cmpny-6.jpg);"></div>
+        </div>
+        <div class="location">
+            <div>
+                <div class="location-heading">Our Locations</div>
+                <div class="button">Request Rate</div>
+            </div>
+            
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193596.00927607666!2d-74.1444869624808!3d40.697370921692986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2srs!4v1688938516865!5m2!1sen!2srs" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="informations">
+            <div class="left">
+                <a href="#"><img src="slike/logo-footer.png" alt=""></a>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque rutrum pallentesqu.</div>
+                <a href="#">porto@doamain.com</a><br>
+                <a href="#">800-123-4567</a>
+                <div>
+                    <div class="button">Request Rate</div>
+                    <div class="button blue-btn">Track Order</div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="footer-nav">
+                    <div>
+                        <p>Navigation</p>
+                        <div>
+                            <div>
+                                <p>Home</p>
+                                <p>News</p>
+                                <p>About Us</p>
+                            </div>
+                            <div>
+                                <p>Pages</p>
+                                <p>Services</p>
+                                <p>Contact Us</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Useful Links</p>
+                        <div>
+                            <div>
+                                <p>Registered Shippers</p>
+                                <p>Local Pickup</p>
+                                
+                            </div>
+                            <div>
+                                <p>Local Delivery</p>
+                                <p>Freight Consolidation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <div>Subscribe to newsletter:</div>
+                    <div class="input">
+                        <input type="email" placeholder="Email Adress">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div>
+            Porto Transportation & Logistic © 2023. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

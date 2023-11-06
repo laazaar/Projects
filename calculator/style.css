@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.green {
+    --primary: #043115;
+    --secondary: #2a4b4b;
+    --accent-1: #5C8374;
+    --accent-2: #93B1A6;
+}
+
+.blue {
+    --primary: #191D88;
+    --secondary: #1450A3;
+    --accent-1: #337CCF;
+    --accent-2: #39d1ff;
+}
+
+.olive {
+    --primary: #435334;
+    --secondary: #9EB384;
+    --accent-1: #cedebd57;
+    --accent-2: #faf1e4b9;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    background-color: color-mix(in oklab, var(--primary) 60%, black 40%);
+    color: white;
+}
+
+.calculator {
+    width: max-content;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.calc-body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.calc-body .top-row {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-template-columns: 2fr 1fr;
+}
+
+.calc-body .top-row > div {
+    width: 100%;
+    background-color: var(--accent-1);
+}
+
+.calc-body .numbers {
+    grid-column: 1/2;
+    grid-row: 2/6;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calc-body .numbers :nth-child(10) {
+    grid-column: span 2;
+}
+
+.calc-body .equals {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.calc-body .equals div {
+    background-color: var(--accent-2);
+}
+
+.calc-body .operations {
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
+.calc-body .operations div {
+    background-color: var(--accent-1);
+}
+
+.calc-body > div {
+    display: grid;
+    place-items: center;
+    gap: 0.75rem;
+}
+
+.calc-body > div > div {
+    min-width: 60px;
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--secondary);
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 11px;
+}
+
+.calc-body > div > div:active {
+    background-color: rgba(245, 245, 245, 0.596);
+}
+
+@media(hover: hover) {
+    .calc-body > div > div:hover {
+        background-color: rgba(245, 245, 245, 0.596);
+    }
+}
+
+.calculation-section {
+    background-color: rgba(255, 255, 255, 0.616);
+    height: 60px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 11px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.calculation-section > div {
+    display: flex;
+    justify-content: end;
+}
+
+.calculation-section > div:first-child {
+    font-size: 1.1rem;
+    color: rgb(59, 59, 59);
+}
