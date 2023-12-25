@@ -1,0 +1,37 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(components/Images/background1.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-inline: 2rem;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+
+.wrapper {
+  max-width: 400px;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0.377);
+  width: max-content;
+  padding: 2rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(0.5rem);
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    max-height: 80%;
+    overflow: auto;
+  }
+}
