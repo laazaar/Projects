@@ -1,0 +1,193 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Lazar",
+      "lastName": "Golubovic",
+      "username": "Lazar1234",
+      "password": "Lazar1234",
+      "address": "Vozdova 1",
+      "phoneNumber": 381601234567,
+      "profileImage": "https://img.buzzfeed.com/buzzfeed-static/static/2015-08/29/15/enhanced/webdr12/longform-original-23574-1440876855-3.png?downsize=700%3A%2A&output-quality=auto&output-format=auto",
+      "gender": "M",
+      "admin": true
+    },
+    {
+      "id": "2",
+      "firstName": "Marko",
+      "lastName": "Markovic",
+      "username": "Mare1234",
+      "password": "Mare1234",
+      "address": "Svetosavska 1",
+      "phoneNumber": 381601234567,
+      "profileImage": "https://pics.craiyon.com/2023-06-22/87dcb843a8504c66a36d93d00af1d115.webp",
+      "gender": "M",
+      "admin": false
+    }
+  ],
+  "ads": [
+    {
+      "id": "1",
+      "title": "Porsche",
+      "description": "A sports car",
+      "price": "6500",
+      "image": "https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1685458010/autoexpress/2023/05/Porsche%20911%20GTS%20UK%20001_otx6j7.jpg",
+      "likes": [
+        1,
+        2
+      ],
+      "views": 21,
+      "rating": [
+        {
+          "stars": 2,
+          "userId": 2
+        },
+        {
+          "stars": 3,
+          "userId": "1"
+        }
+      ],
+      "categoryId": "1",
+      "userId": 2
+    },
+    {
+      "title": "Lamborghini",
+      "description": "A fast sports Car jkdfndjks fndjksfn djksnfjdsnfjk dsnfjk ndsjkf nsdjkn jkdsnf jkdsn fjkdnsjkn ds",
+      "price": "7200",
+      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2023/02/896/500/lambo-3.jpg?ve=1&tl=1",
+      "categoryId": "1",
+      "userId": "2",
+      "likes": [
+        "1",
+        "2"
+      ],
+      "views": 18,
+      "rating": [
+        {
+          "stars": 5,
+          "userId": "1"
+        },
+        {
+          "stars": 3,
+          "userId": "2"
+        }
+      ],
+      "id": "2"
+    },
+    {
+      "title": "Cvece",
+      "description": "dsadsad",
+      "price": "2400",
+      "image": "https://www.slikomania.rs/fotky6509/fotos/CFAZH6215E1.jpg",
+      "categoryId": "2",
+      "userId": "2",
+      "likes": [],
+      "views": 11,
+      "rating": [
+        {
+          "stars": 5,
+          "userId": "2"
+        }
+      ],
+      "id": "3"
+    },
+    {
+      "title": "Picture",
+      "description": "dsadsad",
+      "price": "3500",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Jean-baptiste_corot%2C_corso_di_un_fiume%2C_1845-55_ca.jpg",
+      "categoryId": "2",
+      "userId": "2",
+      "likes": [],
+      "views": 4,
+      "rating": [],
+      "id": "4"
+    },
+    {
+      "title": "Chinesee",
+      "description": "Beautiful bowls of food",
+      "price": "200",
+      "image": "https://assets.epicurious.com/photos/624d9590857fa7e509238b59/3:2/w_6948,h_4632,c_limit/RegionalChinese_HERO_033122_31320.jpg",
+      "categoryId": "2",
+      "userId": "2",
+      "likes": [],
+      "views": 1,
+      "rating": [],
+      "id": "7cK_0Va"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Pictures",
+      "image": "https://www.slikomania.rs/fotky6509/fotos/CFAZH6215E1.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Car",
+      "image": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&height=900&width=1600&fit=bounds",
+      "id": "1"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "This is a lambo comment",
+      "adId": 2,
+      "userId": 1
+    },
+    {
+      "id": "2",
+      "text": "This is a porsche comment",
+      "adId": 1,
+      "userId": 1
+    },
+    {
+      "userId": "1",
+      "adId": "2",
+      "text": "dasdasda",
+      "id": "7"
+    },
+    {
+      "userId": "1",
+      "adId": "2",
+      "text": "patak daca",
+      "id": "8"
+    },
+    {
+      "userId": "2",
+      "adId": "2",
+      "text": "Djokica",
+      "id": "9"
+    },
+    {
+      "userId": "2",
+      "adId": "1",
+      "text": "This is a caaaaaaaar",
+      "id": "10"
+    },
+    {
+      "userId": "2",
+      "adId": "1",
+      "text": "dsadasdasd",
+      "id": "11"
+    },
+    {
+      "userId": "2",
+      "adId": "3",
+      "text": "Nice picture",
+      "id": "12"
+    },
+    {
+      "userId": 2,
+      "adId": "1",
+      "text": "Tralalalala",
+      "id": "13"
+    },
+    {
+      "userId": "1",
+      "adId": "1",
+      "text": "Lep auto",
+      "id": "WRUy_Wd"
+    }
+  ]
+}

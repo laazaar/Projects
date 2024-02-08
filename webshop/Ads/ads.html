@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../Admin/admin.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/20ebe1846a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="ads-body">
+    <nav>
+      <ul>
+        <li><a href="../Ads/ads.html">Home</a></li>
+        <li><a href="../User/user.html" id="profileLink">Profile</a></li>
+      </ul>
+    </nav>
+    <div>
+      <aside class="adsAside">
+        <div id="accordion-toggle">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="accordion">
+          <div>
+            <label for="inputMin">Min:</label>
+            <input id="inputMin" type="number" placeholder="0" />
+          </div>
+          <div>
+            <label for="inputMax">Max:</label>
+
+            <input id="inputMax" type="number" placeholder="0" />
+          </div>
+        </div>
+        <div class="accordion">
+          <div>
+            <label>Sort by</label>
+            <select id="sortBy">
+              <option value="price">Price</option>
+              <option value="likes">Likes</option>
+              <option value="views">Views</option>
+              <option value="rating">Rating</option>
+            </select>
+          </div>
+          <div>
+            <label>Sort order</label>
+            <select id="sortOrder">
+              <option value="asc">ASC</option>
+              <option value="desc">DESC</option>
+            </select>
+          </div>
+        </div>
+        <div class="accordion">
+          <select id="filterSelect">
+            <option value="all">Show All</option>
+          </select>
+          <button onclick="filter()">Filter</button>
+        </div>
+      </aside>
+      <main class="mainAds">
+        <div id="allAds" class="ads"></div>
+      </main>
+    </div>
+    <script src="ads.js"></script>
+  </body>
+</html>

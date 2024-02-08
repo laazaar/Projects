@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../Admin/admin.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/20ebe1846a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../Ads/ads.html">Home</a></li>
+        <li><a href="../User/user.html" id="profileLink">Profile</a></li>
+      </ul>
+    </nav>
+    <div>
+      <aside class="user-aside">
+        <div><img src="" alt="" id="profileImage" /></div>
+        <div class="user-info">
+          <div id="name"></div>
+          <div id="username"></div>
+          <div id="address"></div>
+          <div id="phoneNumber"></div>
+          <div id="gender"></div>
+        </div>
+        <div class="button-container">
+          <button onclick="addEditAds()">Add an Add</button>
+          <button onclick="logout()">Log Out</button>
+        </div>
+      </aside>
+      <main>
+        <div class="top-row">
+          <select id="filterSelect" onchange="filter(this)"></select>
+        </div>
+        <div id="allAds" class="allAds"></div>
+      </main>
+      <div class="addEdit">
+        <div id="addEdit" hidden>
+          <img src="" alt="" id="previewImage" />
+          <form id="addEditForm">
+            <!-- <label for="imgInput">Image Link:</label> -->
+            <input
+              type="text"
+              id="imgInput"
+              onfocusout="previewImageFunc()"
+              placeholder="Image Link"
+            /><br />
+            <!-- <label for="nameInput">Title:</label> -->
+            <input type="text" id="nameInput" placeholder="Title" /><br />
+            <!-- <label for="descriptionInput">Description:</label> -->
+            <textarea
+              id="descriptionInput"
+              rows="3"
+              placeholder="Description"
+            ></textarea
+            ><br />
+            <div class="price-cat">
+              <div>
+                <!-- <label for="priceInput">Price:</label> -->
+                <input
+                  type="number"
+                  id="priceInput"
+                  placeholder="Price"
+                /><br />
+              </div>
+              <div>
+                <!-- <label>Category:</label><br /> -->
+                <select id="categorySelect"></select>
+              </div>
+            </div>
+            <br />
+            <div id="error"></div>
+            <button id="addEditSubmit"></button>
+            <button id="addEditCancel">Cancel</button>
+          </form>
+        </div>
+      </div>
+      <div class="delete" id="deleteContainer">
+        <div>
+          <div>Are you sure you want to delete this ad?</div>
+          <div class="buttons">
+            <button class="cancelBtn" id="deleteCancel">Cancel</button>
+            <button id="deleteYes">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="user.js"></script>
+  </body>
+</html>

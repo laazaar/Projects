@@ -1,0 +1,525 @@
+body > div {
+  color: white;
+  display: grid;
+  grid-template-columns: 25% 1fr 25%;
+  gap: 2rem;
+  padding-inline: 2rem;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+body.ads-body > div {
+  grid-template-columns: 20% 1fr;
+  margin-top: 0;
+}
+
+nav {
+  position: sticky;
+  height: 5rem;
+  padding-inline: 2rem;
+  top: 0;
+  background-color: rgb(40, 45, 53);
+  backdrop-filter: blur(1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-block: 0;
+  width: max-content;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #25a0f8;
+}
+
+img {
+  max-width: 100%;
+}
+
+body aside {
+  font-size: 1.3rem;
+  position: sticky;
+  left: 0;
+  top: 5rem;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+body aside > .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+body aside .button-container {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+body aside .button-container button {
+  margin: 0;
+}
+
+body aside #profileImage {
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 1000px;
+  object-fit: cover;
+}
+
+main > .top-row > form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  /* width: 60%; */
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+main > .top-row > select {
+  width: 200px;
+}
+
+.mainAds {
+  grid-column: 2/-1;
+}
+
+main > .top-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: sticky;
+  top: 5rem;
+  padding-block: 1rem;
+  background-color: #0b1315;
+  box-shadow: 0 0 0 100vw #0b1315;
+  clip-path: inset(0 -100vw);
+  /* backdrop-filter: blur(5rem); */
+}
+
+.allCategories,
+.ads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.ads {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ads-body .adsAside > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ads-body .adsAside :is(input, select:not(:last-of-type)) {
+  margin-top: 0.5rem;
+}
+
+.ads-body .adsAside button {
+  margin-inline: auto;
+}
+
+.allCategories > div,
+.allAds > div,
+.ads > div {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 1.6rem;
+  color: black;
+  box-shadow: 6px 6px 20px #000000, -6px -6px 20px #161e20;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.allAds {
+  display: grid;
+  gap: 2rem;
+}
+
+.allAds > div {
+  width: 100%;
+  flex-direction: row;
+  max-width: 700px;
+  margin-inline: auto;
+  gap: 1rem;
+}
+
+.allAds .aside-part,
+.ads .aside-part {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.2rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.ads > div {
+  gap: 1rem;
+}
+
+.ads .aside-part {
+  gap: 0.5rem;
+}
+
+.allAds img {
+  max-width: 350px;
+}
+
+.allCategories img,
+.allAds img,
+.ads img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.allCategories .category-name,
+.allAds .category-name,
+.ads .category-name {
+  color: white;
+  width: max-content;
+  margin-inline: auto;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.allCategories .category-name {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.allCategories .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.allCategories .button-container button,
+.allAds button,
+.ads button {
+  margin: 0;
+}
+
+.allAds .small-container,
+.ads .small-container {
+  display: flex;
+  color: white;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.allAds .description,
+.ads .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.allAds .small-container-2,
+.ads .small-container-2 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.ads .small-container-2 {
+  margin-top: 0;
+}
+
+.allAds .small-container-2 > div:last-child {
+  display: flex;
+  gap: 1rem;
+}
+
+.addEdit {
+  position: sticky;
+  top: 5rem;
+  right: 0;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addEdit label {
+  margin-inline: auto;
+}
+
+.addEdit img {
+  display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.addEdit #error {
+  font-size: 1.1rem;
+  color: red;
+}
+
+.price-cat {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.price-cat > div {
+  width: 100%;
+}
+
+.delete {
+  position: fixed;
+  inset: 0;
+  background-color: #0000007c;
+  backdrop-filter: blur(20px);
+  display: none;
+  place-items: center;
+}
+
+.delete > div {
+  padding: 2rem 3rem;
+  background-color: #0c1315;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  max-width: 250px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.delete > div .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.delete > div .buttons .cancelBtn {
+  background-color: rgba(53, 53, 53, 0.534);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.delete > div .buttons .cancelBtn:hover {
+  background-color: rgba(255, 255, 255, 0.178);
+}
+
+#accordion-toggle {
+  display: none;
+}
+
+#addEditCancel {
+  display: none;
+}
+
+@media (max-width: 1650px) {
+  .allAds {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .allAds > div {
+    flex-direction: column;
+    max-width: calc(100% - 2rem);
+  }
+
+  .allAds img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .allAds {
+    grid-template-columns: 1fr;
+  }
+
+  .ads {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  body > div {
+    grid-template-columns: 30% 1fr 30%;
+  }
+
+  .allCategories {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ads {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  body.ads-body > div {
+    grid-template-columns: 30% 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .allAds {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body.ads-body > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  body aside {
+    height: max-content;
+  }
+
+  .adsAside {
+    background-color: #0b1315;
+    padding-block: 2rem;
+    max-width: 500px;
+    margin-inline: auto;
+    box-shadow: 0 0 0 100vw #0b1315;
+    clip-path: inset(0 -100vw);
+    text-align: center;
+    overflow: hidden;
+    max-height: 2rem;
+  }
+
+  #accordion-toggle {
+    display: block;
+    margin-bottom: 0;
+    cursor: pointer;
+    max-width: max-content;
+    margin-inline: auto;
+  }
+
+  body aside.adsAside > .accordion {
+    display: none;
+  }
+
+  .ads {
+    margin-top: 0;
+  }
+
+  body > div {
+    grid-template-columns: 1fr;
+  }
+
+  .allCategories {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body aside.user-aside {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
+  body aside.user-aside .button-container {
+    position: static;
+    margin-left: auto;
+    align-items: end;
+  }
+
+  .addEdit {
+    display: none;
+  }
+
+  .addEdit.visible {
+    display: flex;
+    position: relative;
+    /* z-index: 10; */
+    inset: 0;
+    top: 5rem;
+    padding-inline: 2rem;
+    background-color: #0c1315;
+    min-height: calc(100vh - 5rem);
+    height: max-content;
+    overflow: hidden;
+    padding-bottom: 2rem;
+  }
+
+  .addEdit #addEditCancel {
+    display: block;
+  }
+
+  body.addEditVisible :is(main, aside) {
+    display: none;
+  }
+}
+
+@media (max-width: 678px) {
+  .ads,
+  .allAds {
+    grid-template-columns: 1fr;
+  }
+
+  body aside.user-aside {
+    flex-direction: column;
+  }
+
+  body aside.user-aside .button-container {
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .allCategories {
+    grid-template-columns: 1fr;
+  }
+
+  body aside > .user-info {
+    align-items: center;
+  }
+}

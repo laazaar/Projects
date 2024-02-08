@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="ad_info.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/20ebe1846a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../Ads/ads.html">Home</a></li>
+        <li><a href="../User/user.html" id="profileLink">Profile</a></li>
+      </ul>
+    </nav>
+    <div>
+      <div id="allAds"></div>
+      <div id="numOfComments"></div>
+      <div class="addComment">
+        <textarea id="addComment" rows="2" placeholder="Comment..."></textarea>
+        <button onclick="addNewComment()">Comment</button>
+      </div>
+      <div id="comments" class="comments"></div>
+      <div class="delete" id="deleteContainer">
+        <div>
+          <div>Are you sure you want to delete this ad?</div>
+          <div class="buttons">
+            <button class="cancelBtn" id="deleteCancel">Cancel</button>
+            <button id="deleteYes">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="ad_info.js"></script>
+  </body>
+</html>
