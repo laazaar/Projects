@@ -27,7 +27,7 @@ const writeComments = async () => {
   const responseComments = await fetch(
     `http://localhost:3000/comments?adId=${adId}`
   );
-  dataComments = await responseComments.json();
+  const dataComments = await responseComments.json();
 
   const numOfComments = document.getElementById("numOfComments");
   numOfComments.innerHTML = "Comments: " + dataComments.length;
@@ -36,7 +36,7 @@ const writeComments = async () => {
 
   commentsContainer.innerHTML = "";
 
-  for (el of dataComments) {
+  for (el of dataComments.reverse()) {
     const comment = document.createElement("div");
     commentsContainer.appendChild(comment);
 

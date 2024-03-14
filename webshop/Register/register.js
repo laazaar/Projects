@@ -5,6 +5,7 @@ forma.onsubmit = async (e) => {
   const firstName = document.getElementById("firstName");
   const lastName = document.getElementById("lastName");
   const username = document.getElementById("username");
+  const profileImg = document.getElementById("profileImg");
   const address = document.getElementById("address");
   const phoneNumber = document.getElementById("phoneNumber");
   const password = document.getElementById("password");
@@ -23,11 +24,14 @@ forma.onsubmit = async (e) => {
   } else if (lastName.value == "") {
     error.innerHTML = "Enter Your Last Name";
     return;
-  } else if (data.find((el) => el.username == username.value)) {
+  } else if (data.find((el) => el.username == username?.value)) {
     error.innerHTML = "This username already exists";
     return;
   } else if (username.value == "") {
     error.innerHTML = "Enter Your Username";
+    return;
+  } else if (profileImg.value == "") {
+    error.innerHTML = "Provide a profile Image Link";
     return;
   } else if (username.value.length < 5) {
     error.innerHTML = "Username must have at least 5 characters";
@@ -58,6 +62,7 @@ forma.onsubmit = async (e) => {
       password: password.value,
       address: address.value,
       phoneNumber: phoneNumber.value,
+      profileImage: profileImg.value,
       gender: sex.checked ? "M" : "F",
       admin: admin.checked ? true : false,
     }),

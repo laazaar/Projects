@@ -175,7 +175,7 @@ main > .top-row {
 }
 
 .allAds > div {
-  width: 100%;
+  width: calc(100% - 2rem);
   flex-direction: row;
   max-width: 700px;
   margin-inline: auto;
@@ -364,14 +364,13 @@ main > .top-row {
   display: none;
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1600px) {
   .allAds {
     grid-template-columns: 1fr 1fr;
   }
 
   .allAds > div {
     flex-direction: column;
-    max-width: calc(100% - 2rem);
   }
 
   .allAds img {
@@ -480,7 +479,6 @@ main > .top-row {
   .addEdit.visible {
     display: flex;
     position: relative;
-    /* z-index: 10; */
     inset: 0;
     top: 5rem;
     padding-inline: 2rem;

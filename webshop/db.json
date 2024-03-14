@@ -23,6 +23,18 @@
       "profileImage": "https://pics.craiyon.com/2023-06-22/87dcb843a8504c66a36d93d00af1d115.webp",
       "gender": "M",
       "admin": false
+    },
+    {
+      "firstName": "Djoka",
+      "lastName": "Djokic",
+      "username": "Djokaa123",
+      "password": "Djokaa123",
+      "address": "Svetosavska",
+      "phoneNumber": "061321321",
+      "profileImage": "https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707350400&semt=sph",
+      "gender": "M",
+      "admin": false,
+      "id": "zfj7d4j"
     }
   ],
   "ads": [
@@ -34,9 +46,10 @@
       "image": "https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1685458010/autoexpress/2023/05/Porsche%20911%20GTS%20UK%20001_otx6j7.jpg",
       "likes": [
         1,
-        2
+        2,
+        "zfj7d4j"
       ],
-      "views": 21,
+      "views": 24,
       "rating": [
         {
           "stars": 2,
@@ -45,6 +58,10 @@
         {
           "stars": 3,
           "userId": "1"
+        },
+        {
+          "stars": 5,
+          "userId": "zfj7d4j"
         }
       ],
       "categoryId": "1",
@@ -114,6 +131,18 @@
       "views": 1,
       "rating": [],
       "id": "7cK_0Va"
+    },
+    {
+      "title": "Food",
+      "description": "Food",
+      "price": "200",
+      "image": "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRq1mQLx2tcZ4owspN_OxqcHZBIc0f1F6NfiqBYgGnwEkdc3tbUGKETWmBH2PNppLs-dJJAt92vs2I16Eno7ks",
+      "categoryId": "2",
+      "userId": "zfj7d4j",
+      "likes": [],
+      "views": 0,
+      "rating": [],
+      "id": "d5jYxdq"
     }
   ],
   "categories": [
@@ -188,6 +217,18 @@
       "adId": "1",
       "text": "Lep auto",
       "id": "WRUy_Wd"
+    },
+    {
+      "userId": "zfj7d4j",
+      "adId": "1",
+      "text": "Nice car",
+      "id": "M5UPheE"
+    },
+    {
+      "userId": "zfj7d4j",
+      "adId": "1",
+      "text": "Porse",
+      "id": "tzUkf1v"
     }
   ]
 }
